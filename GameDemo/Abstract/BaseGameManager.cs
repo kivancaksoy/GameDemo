@@ -10,7 +10,7 @@ namespace GameDemo.Abstract
     public abstract class BaseGameManager : IGameService
     {
 
-        public virtual void Sell(Game game, Gamer gamer)
+        public void Sell(Game game, Gamer gamer)
         {
             Console.WriteLine(gamer.NickName + " bought the " + game.Name + " for $" + game.UnitPrice);
         }
